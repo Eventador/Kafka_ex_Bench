@@ -16,6 +16,9 @@ defmodule KafkaExTest.Mixfile do
   end
 
   defp deps do
-    [{:kafka_ex, "~> 0.6.5"},]
+    [
+        {:kafka_ex, "~> 0.6.5"},
+        {:uuid, "~> 1.1"}
+    ]
   end
 end
