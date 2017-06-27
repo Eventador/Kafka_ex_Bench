@@ -9,7 +9,7 @@ defmodule KafkaTest do
 
     def producer(n) do
 
-        test_message = ~s({"a":"764efa883dda1e11db47671c4a3bbd9e","timestamp":#{:os.system_time(:milli_seconds)},"c":"aBcDeFgHiJk","d":"This is a test","e":"764efa883dda1e11db47671c4a3bbd9e","f":"testing"})
+        test_message = ~s({"a":"#{UUID.uuid4()}","timestamp":#{:os.system_time(:milli_seconds)},"c":"aBcDeFgHiJk","d":"This is a test","e":"#{UUID.uuid4()}","f":"testing"})
 
 	message = %KafkaEx.Protocol.Produce.Message{value: test_message}
         messages = [message]
