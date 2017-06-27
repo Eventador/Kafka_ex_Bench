@@ -3,7 +3,7 @@ messages_count = 20000
 
 defmodule KafkaTest do
     # test configurables
-    @test_message ~s("a":"764efa883dda1e11db47671c4a3bbd9e","timestamp":1497898320,"c":"aBcDeFgHiJk","d":"This is a test","e":"764efa883dda1e11db47671c4a3bbd9e","f":"testing"})
+    @test_message ~s({"a":"764efa883dda1e11db47671c4a3bbd9e","timestamp":1497898320,"c":"aBcDeFgHiJk","d":"This is a test","e":"764efa883dda1e11db47671c4a3bbd9e","f":"testing"})
     @topic "elixirtesting"
     @produce_timeout 250
     @report_threshold 40 # milliseconds
